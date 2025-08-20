@@ -1,0 +1,17 @@
+{
+  "name": "ts-rs-bind",
+  "version": "1.0.0",
+  "description": "Simple Rust-TypeScript bindings example",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "cargo build --release && tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "dependencies": {
+    "koffi": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
